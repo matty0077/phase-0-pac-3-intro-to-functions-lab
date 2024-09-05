@@ -1,24 +1,24 @@
 
-function shout(string){
+/*function shout(string){
   return string.toUpperCase();
   //to do
-}
+}*/
 
 ////expected in shout such n such test file
-describe("shout(string)", function () {
+/*describe("shout(string)", function () {
     it("receives one argument and returns it in all caps", function () {
       expect(shout("hello")).toEqual("HELLO");
     });
-  });
+  });*/
   
   //////////////////////////
 
 function shout(string) {
-return string.toUpperCase();
+    return string.toUpperCase();
 }
 /////////////////
 function whisper(string) {
-return string.toLowerCase();
+    return string.toLowerCase();
 }
 ///////////////
 function logWhisper(string) {
@@ -31,10 +31,18 @@ function logShout(string) {
 //////////////
 
 function sayHiToHeadphonedRoommate(tone){
-    if tone=shout{console.log('yes indeed!!!')}
-            else{console.log('cant hear ya!!!!')}
-      //if string=shout{console.log('yes indeed!!!')}
-            //else{console.log('cant hear ya!!!!')}
+    if (tone === (shout(tone))){
+      return('YES INDEED!')
+  }
+    else if (tone === (whisper(tone))){
+      return("I can't hear you!")
+  }
+    else{
+      return('I would love to!')
+  }
 }
-sayHiToHeadphonedRoommate(shout)
+  //if string=shout{console.log('yes indeed!!!')}
+            //else{console.log('cant hear ya!!!!')}
+
+//sayHiToHeadphonedRoommate(shout)
 //logShout("hola")
